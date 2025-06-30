@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PYQ Study Material Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-folder-open"></i>PYQ Study Resource Manager</h1>
+      <p>Select year and subject to access Google Drive resources</p>
+    </div>
+  </header>
+
+  <section class="filter-bar">
+    <div class="container">
+      <label for="yearSelect">📅 Select Year:</label>
+      <select id="yearSelect" onchange="filterYear(this.value)">
+        <option value="all">All Years</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="card-container" id="cardContainer">
+      <!-- Cards dynamically rendered here -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Study Material Portal | Thanks & Regards😊 @its_sandeepkashyap</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
